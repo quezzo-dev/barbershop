@@ -1,0 +1,36 @@
+:root {
+  --accent-color: #fbb400;
+  --hover-color: #a3c1ef;
+  --white-color: #ffffff;
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.header {
+}
+
+.side-nav,
+.user-menu {
+  display: flex;
+}
+
+.side-nav-link {
+  padding: 67px 14px 8px;
+}
+.side-nav-link:hover,
+.side-nav-link:focus {
+  background-color: var(--hover-color);
+  color: var(--white-color);
+}
+
+.side-nav-item:not(:last-child) {
+  margin-right: 20px;
+}
