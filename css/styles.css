@@ -3,6 +3,8 @@
   --hover-color: #a3c1ef;
   --white-color: #ffffff;
   --text-color: #163561;
+  --bg-color: #fafbff;
+  --bgHover-color: #99baed;
 }
 body {
   font-family: "Catamaran", sans-serif;
@@ -41,7 +43,6 @@ body {
 .container.header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-left: 170px;
   padding-right: 213px;
 }
@@ -49,6 +50,18 @@ body {
 .side-nav,
 .user-menu {
   display: flex;
+}
+
+.side-nav {
+  margin-left: 110px;
+}
+
+.user-menu {
+  margin-left: 400px;
+}
+
+.user-menu > img {
+  margin-right: 72px;
 }
 
 .side-nav-link {
@@ -101,7 +114,6 @@ body {
   font-size: 70px;
   line-height: 1.506;
   letter-spacing: 0.03em;
-  margin-bottom: 80px;
 }
 
 .our-history > .container {
@@ -117,10 +129,93 @@ body {
   background-position-y: center; */
 }
 
+.our-list {
+  margin-top: 80px;
+}
+
 .our-item {
   margin-bottom: 108px;
 }
 
 .our-item:not(:last-child) {
   margin-bottom: 48px;
+}
+
+.services > .container {
+  padding-left: 249px;
+  padding-right: 254px;
+  padding-bottom: 136px;
+  padding-top: 136px;
+}
+
+.services .second-title {
+  text-align: center;
+}
+
+.services-list {
+  margin-top: 83px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-item {
+  width: 441px;
+  border-radius: 29px;
+  background-color: var(--bg-color);
+  padding: 50px 41px 72px;
+  box-shadow: 0px 5px 0px #99baed;
+}
+
+.services-item:hover,
+.services-item:focus {
+  background-color: var(--bgHover-color);
+  color: var(--white-color);
+}
+
+.services-item:hover .services-subtitle,
+.services-item:hover .services-description,
+.services-item:focus .services-subtitle,
+.services-item:focus .services-description {
+  background-color: var(--bgHover-color);
+  color: var(--white-color);
+  box-shadow: 0px 5px 0px #99baed;
+}
+
+.services-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 103px;
+  height: 126px;
+  border-radius: 13px;
+  background: #e5ecfe;
+  box-shadow: 0px 1px 0px #008fdd;
+  margin: 0 auto;
+  margin-bottom: 59px;
+}
+
+.services-subtitle {
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.166;
+  color: var(--text-color);
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.services-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.506;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #153461;
+
+  opacity: 0.65;
 }
