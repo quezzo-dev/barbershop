@@ -2,19 +2,48 @@
   --accent-color: #fbb400;
   --hover-color: #a3c1ef;
   --white-color: #ffffff;
+  --text-color: #163561;
+}
+body {
+  font-family: "Catamaran", sans-serif;
 }
 
 .container {
   width: 1920px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  border: 1px solid black;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.506;
+  letter-spacing: 0.03em;
+  background-color: var(--hover-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  padding: 23px 33px 23px 32px;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 10px 30px var(--hover-color);
+  transition: all 0.2s ease-out;
 }
 
 .accent {
   color: var(--accent-color);
 }
 
-.header {
+.container.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 170px;
+  padding-right: 213px;
 }
 
 .side-nav,
@@ -33,4 +62,65 @@
 
 .side-nav-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.hero > .container {
+  background-image: url("../images/heroBg.png");
+  background-repeat: no-repeat;
+  padding-top: 161px;
+  padding-bottom: 153px;
+  background-position-x: 100%;
+  background-position-y: center;
+  padding-left: 188px;
+  padding-right: 1156px;
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 1.336;
+  color: var(--text-color);
+}
+
+.description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.506;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+  margin-top: 29px;
+  margin-bottom: 97px;
+}
+
+.second-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 1.506;
+  letter-spacing: 0.03em;
+  margin-bottom: 80px;
+}
+
+.our-history > .container {
+  padding-left: 1199px;
+  padding-right: 195px;
+  padding-top: 288px;
+  padding-bottom: 334px;
+  background: url("../images/topL.svg") left top,
+    url("../images/topR.svg") right top,
+    url("../images/ourHistory.png") left center;
+  background-repeat: no-repeat;
+  /* background-position-x: 0;
+  background-position-y: center; */
+}
+
+.our-item {
+  margin-bottom: 108px;
+}
+
+.our-item:not(:last-child) {
+  margin-bottom: 48px;
 }
